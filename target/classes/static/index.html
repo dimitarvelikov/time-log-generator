@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Outcons Interview Task</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+
+    <script src="scripts.js"></script>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+    <script type="text/javascript" src="loader.js"></script>
+    <script>
+        google.charts.load('current', {'packages': ['bar', 'corechart']});
+    </script>
+</head>
+
+<body>
+<div id="userList">
+    <table id="userTable"></table>
+    <button style="border-radius: 20px;padding: 8px 50px 8px 50px;" onclick="reload()">Reload</button>
+</div>
+<div style="text-align: center">
+    <div>
+        <label for="fromDateFilter">From: </label><input type="date" id="fromDateFilter">
+        <label for="toDateFilter">To:</label><input type="date" id="toDateFilter">
+        <br/>
+        <input onclick="radioBtnClick('project')" type="radio" id="projectChecked" name="chartType" value="project">
+        <label for="projectChecked">Project</label>
+        <input checked onclick="radioBtnClick('user')" type="radio" id="userChecked" name="chartType" value="user">
+        <label for="userChecked">User</label><br>
+    </div>
+    <div id="chart"></div>
+
+</div>
+</body>
+</html>

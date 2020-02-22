@@ -1,0 +1,32 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#userList, #chart {
+    height: 100%;
+    width: 50%;
+    float: left;
+    position: relative;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+#chart {
+    background-color: darkturquoise;
+}
+
+#userTable {
+    width: 80%;
+    border-collapse: collapse;
+}
+
+#userTable > th, td {
+    border: 1px solid black;
+}
+
+#userTable > tbody > tr:hover {
+    background-color: lightcoral;
+}
